@@ -812,8 +812,8 @@ def main():
                 df = pd.DataFrame(entities)
                 df = df.drop_duplicates(subset=['text', 'label'])
                 st.dataframe(df, use_container_width=True)
-                            else:
-                    st.warning("No entities extracted from sample text.")
+            else:
+                st.warning("No entities extracted from sample text.")
         
         # PDF Troubleshooting Section
         st.markdown("---")
